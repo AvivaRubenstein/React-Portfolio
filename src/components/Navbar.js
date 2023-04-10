@@ -32,8 +32,10 @@ function Navbar({ currentPage, handlePageChange }) {
         <a
           href="#portfolio"
           onClick={() => handlePageChange('Portfolio')}
-          //  TODO: Add a comment explaining what this logic is doing
-  
+          //  The portfolioContainer component is passing us the handlePageChange function
+          // The page which is passed in -- which in this case is Portfolio -- is set as the currentPage
+              //The current page will be rendered by the PortfolioContainer component and
+          //then, depending on what currentPage is set to we conditionally tell the nav-bar which navbar link is active, to style that one differently
           className={currentPage === 'Portfolio' ? 'nav-link active' : 'nav-link'}
         >
           Portfolio
@@ -43,7 +45,6 @@ function Navbar({ currentPage, handlePageChange }) {
         <a
           href="#resume"
           onClick={() => handlePageChange('Resume')}
-          //  TODO: Add a comment explaining what this logic is doing
 
           className={currentPage === 'Resume' ? 'nav-link active' : 'nav-link'}
         >
@@ -53,7 +54,6 @@ function Navbar({ currentPage, handlePageChange }) {
       <li className="nav-item">
         <a
           href="#contact"
-          //  TODO: Add a comment explaining what this logic is doing
 
           onClick={() => handlePageChange('Contact')}
           className={currentPage === 'Contact' ? 'nav-link active' : 'nav-link'}
