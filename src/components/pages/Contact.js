@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import {checkPassword} from '../../utils/helpers';
+import {checkPassword, validateEmail} from '../../utils/helpers';
 
 export default function Contact() {
   //setting state variables for the contact form's fields
@@ -21,10 +21,16 @@ if(inputType === 'name'){
   setName(inputValue);
 } else if(inputType ==='email'){
   setEmail(inputValue);
+  if(!validateEmail(email)){
+    setErrorMessage('Please enter a valid email address')
+  } else {
+    setErrorMessage('');
+  }
 } else if(inputType === 'message'){
   setMessage(inputValue);
 }
     }
+  //On MouseLeave event - if a user clicks into a field and then moves their mouse away from it -- we want to notify users that the field is required
     const handleMouseLeave = (e) => {
     const {target} = e;
     const inputValue = target.value;
@@ -32,11 +38,16 @@ if(inputType === 'name'){
     if(inputValue === ''){
       setErrorMessage('This field is required!')
     }
-    }
+  }
+  //when a user enters a field by clicking in, we want to clear any error messages
     const handleMouseEnter = (e) => {
       setErrorMessage('');
     }
 
+const handleFormSubmit = (e) =>{
+  //prevents default behavior of submit button which would refresh page
+  e.preventDefault();
+}
 
 
   return (
@@ -85,7 +96,7 @@ if(inputType === 'name'){
             required
           />
           </label>
-          
+          <button type="button" onClick={handleFormSubmit}>Submit</button>
       </form>
       {errorMessage && (
         <div>
@@ -95,6 +106,3 @@ if(inputType === 'name'){
     </div>
   );
 }
-
-
-
