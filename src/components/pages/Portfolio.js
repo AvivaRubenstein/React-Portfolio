@@ -1,6 +1,13 @@
 import React from 'react';
 import Projects from '../Projects';
 
+const cosmic = require('../../Assets/CosmicDucks.png');
+const crude = require('../../Assets/NoCrudeFood.png');
+const notes = require('../../Assets/NoteTaker.png');
+const scheduler = require('../../Assets/Scheduler.png');
+const blog = require('../../Assets/TechBlog.png');
+const weather = require('../../Assets/WeatherApp.png');
+
 const projects = 
 [
 {
@@ -8,7 +15,7 @@ const projects =
   title: "No Crude Food",
   gitHub: "https://github.com/AlexWiederman/No_Crude_Food",
   link: "https://young-mountain-95021.herokuapp.com/",
-  image: "https://github.com/AlexWiederman/No_Crude_Food/blob/main/public/assets/READMEimage1.png?raw=true",
+  image: crude,
   alt: "Application Screenshot"
 },
 {
@@ -16,7 +23,7 @@ const projects =
   title: "Tech Blog",
   gitHub: "https://github.com/AvivaRubenstein/MVC-Tech-Blog",
   link: "https://radiant-everglades-93421.herokuapp.com/ ",
-  image: "https://user-images.githubusercontent.com/113466697/221442944-4496cb1c-8e20-46ce-ba51-a685d60bd0d5.png",
+  image: blog,
   alt: "Application Screenshot"
 },
 {
@@ -24,7 +31,7 @@ const projects =
   title: "Educational Search Site",
   gitHub: "https://github.com/crystal-coding-time/supreme-octo-system",
   link: "https://crystal-coding-time.github.io/supreme-octo-system/",
-  image: "/Users/avivarubenstein/Documents/classwork/React-Portfolio/public/Screenshot 2023-04-10 at 5.04.10 PM.png",
+  image: cosmic,
   alt: "Application Screenshot"
 },
 {
@@ -32,7 +39,7 @@ const projects =
   title: "Weather Dashboard",
   gitHub: "https://github.com/AvivaRubenstein/weather-dashboard",
   link: "https://avivarubenstein.github.io/weather-dashboard/",
-  image: "/Users/avivarubenstein/Documents/classwork/React-Portfolio/public/Screenshot 2023-04-10 at 5.07.09 PM.png",
+  image: weather,
   alt: "Application Screenshot"
 },
 {
@@ -40,7 +47,7 @@ const projects =
   title: "Text Editor Progressive Web Application",
   gitHub: "https://github.com/AvivaRubenstein/Text-Editor-PWA",
   link: " https://nameless-wildwood-53462.herokuapp.com/ ",
-  image: "/Users/avivarubenstein/Documents/classwork/React-Portfolio/public/Screenshot 2023-04-10 at 5.09.13 PM.png",
+  image: notes,
   alt: "Application Screenshot"
 },
 {
@@ -48,7 +55,7 @@ const projects =
   title: "Work Day Scheduler",
   gitHub: "https://github.com/AvivaRubenstein/work-day-scheduler",
   link: "https://avivarubenstein.github.io/work-day-scheduler/",
-  image: "/Users/avivarubenstein/Documents/classwork/React-Portfolio/public/Screenshot 2023-04-10 at 5.09.13 PM.png",
+  image: scheduler,
   alt: "Application Screenshot"
 },
 ]
@@ -58,11 +65,8 @@ export default function Portfolio() {
   return (
     <div>
       <h1>Portfolio</h1>
-      <p>
-        Here we will return multiple Project components
         {/* map through projects here, and pass in */}
         <Projects projects={projects}/>
-      </p>
     </div>
   );
 }
