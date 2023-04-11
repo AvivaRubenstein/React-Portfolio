@@ -1,5 +1,5 @@
 import React from 'react';
-import Project from '../Project';
+import Projects from '../Projects';
 
 const projects = 
 [
@@ -60,7 +60,8 @@ export default function Portfolio() {
       <h1>Portfolio</h1>
       <p>
         Here we will return multiple Project components
-        <Project projects={projects}/>
+        {/* map through projects here, and pass in */}
+        <Projects projects={projects}/>
       </p>
     </div>
   );
