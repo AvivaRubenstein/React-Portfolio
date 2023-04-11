@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import {checkPassword, validateEmail} from '../../utils/helpers';
 
+
 export default function Contact() {
   //setting state variables for the contact form's fields
   //setting the default value for these vars to be empty, and setting up a function to change the state of each one
@@ -100,7 +101,7 @@ const handleFormSubmit = (e) =>{
       </form>
       {errorMessage && (
         <div>
-          <p className="error-text">{errorMessage}</p>
+          <p className="error-text text-danger">{errorMessage}</p>
         </div>
       )}
     </div>

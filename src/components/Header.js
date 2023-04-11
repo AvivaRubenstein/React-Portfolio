@@ -1,10 +1,10 @@
 import React from 'react';
-import PortfolioContainer from '../components/PortfolioContainer';
+import Navbar from './Navbar';
 
-export default function Resume() {
+export default function Header({currentPage, handlePageChange}) {
   return ( 
     <header>
-
+<Navbar currentPage={currentPage} handlePageChange={handlePageChange} />
     </header>
   );
 }

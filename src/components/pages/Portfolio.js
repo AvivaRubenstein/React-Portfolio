@@ -64,7 +64,7 @@ const projects =
 export default function Portfolio() {
   return (
     <div>
-      <h1>Portfolio</h1>
+      <h1 className='text-center'>Portfolio</h1>
         {/* map through projects here, and pass in */}
         <Projects projects={projects}/>
     </div>

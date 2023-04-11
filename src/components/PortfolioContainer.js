@@ -1,14 +1,14 @@
 import React, { useState } from 'react';
-import Navbar from './Navbar';
 import Resume from './pages/Resume';
 import AboutMe from './pages/AboutMe';
 import Portfolio from './pages/Portfolio';
 import Contact from './pages/Contact';
+import Header from './Header';
 
 export default function PortfolioContainer() {
-  //currentPage is set to the AboutMe section by default
+  //currentPage is set to the About Me page
   const [currentPage, setCurrentPage] = useState('AboutMe');
-  //we are passing in the currentPage we are on, which has the default value of being set to "Home"
+  //we are passing in the currentPage we are on, which has the default value of being set to "About Me"
   //and then we are using the currentPage we are on to return the relevant component 
   const renderPage = () => {
     //when currentPage === Resume, we pass in / render the Resume component
@@ -33,7 +33,7 @@ export default function PortfolioContainer() {
       {/* we are passing props into the NavTabs component:
       the currentPage value is passed in as currentPage= 
       and we are passing in the handlePageChange functionality to be able to update/set a new page */}
-      <Navbar currentPage={currentPage} handlePageChange={handlePageChange} />
+      <Header currentPage={currentPage} handlePageChange={handlePageChange} />
       {/* Here we are calling the renderPage method which will return a component */}
       {renderPage()}
     </div>
