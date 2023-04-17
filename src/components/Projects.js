@@ -13,7 +13,7 @@ const styles = {
 
 function Project(props){
   return (
-    <div className="col col-4" key={props.item.id} style={styles.cardStyles}>
+    <div className="col-md-6 col-lg-4 col-xl-4" key={props.item.id} style={styles.cardStyles}>
           <h4>{props.item.title}</h4>
           <img src={props.item.image} alt={props.item.alt} className="img-fluid img-thumbnail"></img>
           <br></br>
