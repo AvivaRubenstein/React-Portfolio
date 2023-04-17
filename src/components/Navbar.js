@@ -1,18 +1,32 @@
 import React from 'react';
 
+import {colors} from '../utils/helpers';
 
+const styles = {
+  headerStyle: {
+    background: colors.Moonstone,
+    fontSize: '25px',
+  },
+  navbarBrand : {
+    fontSize: '30px'
+  },
+  navItems : {
+    marginLeft: '40px',
+    marginRight: '9px'
+  }
+}
 
 function Navbar({ currentPage, handlePageChange }) {
   return (
-<nav className="navbar navbar-expand-lg bg-light">
+<nav className="navbar navbar-expand-lg" style={styles.headerStyle}>
   <div className="container-fluid">
-    <a className="navbar-brand" href="#">Aviva Rubenstein</a>
+    <a className="navbar-brand" href="#" style={styles.navbarBrand}>Aviva Rubenstein</a>
     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span className="navbar-toggler-icon"></span>
     </button>
     <div className="collapse navbar-collapse" id="navbarSupportedContent">
     <ul ul className="navbar-nav me-auto mb-2 mb-lg-0">
-      <li className="nav-item">
+      <li className="nav-item" style={styles.navItems}>
         <a
           href="#aboutMe"
           //when someone clicks the home link on the navBar, we call the handlePageChange function
@@ -28,7 +42,7 @@ function Navbar({ currentPage, handlePageChange }) {
           About Me
         </a>
       </li>
-      <li className="nav-item">
+      <li className="nav-item" style={styles.navItems}>
         <a
           href="#portfolio"
           onClick={() => handlePageChange('Portfolio')}
@@ -41,7 +55,7 @@ function Navbar({ currentPage, handlePageChange }) {
           Portfolio
         </a>
       </li>
-      <li className="nav-item">
+      <li className="nav-item" style={styles.navItems}>
         <a
           href="#resume"
           onClick={() => handlePageChange('Resume')}
@@ -51,7 +65,7 @@ function Navbar({ currentPage, handlePageChange }) {
           Resume
         </a>
       </li>
-      <li className="nav-item">
+      <li className="nav-item" style={styles.navItems}>
         <a
           href="#contact"
 

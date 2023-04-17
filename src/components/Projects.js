@@ -1,9 +1,19 @@
 import React from "react";
-
+import {colors }from '../utils/helpers'
+const styles = {
+  cardStyles : {
+    background: colors.Vanilla,
+    border: `1px solid ${colors["Atomic-tangerine"]}`,
+    paddingTop: '50px',
+    paddingBottom: '50px',
+    paddingRight: '30px',
+    paddingLeft: '30px'
+  }
+}
 
 function Project(props){
   return (
-    <div className="col col-4 border" key={props.item.id}>
+    <div className="col col-4" key={props.item.id} style={styles.cardStyles}>
           <h4>{props.item.title}</h4>
           <img src={props.item.image} alt={props.item.alt} className="img-fluid img-thumbnail"></img>
           <br></br>
