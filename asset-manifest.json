@@ -1,20 +1,21 @@
 {
   "files": {
     "main.css": "/React-Portfolio/static/css/main.c2cab247.css",
-    "main.js": "/React-Portfolio/static/js/main.a2484f71.js",
+    "main.js": "/React-Portfolio/static/js/main.1da20e4d.js",
     "static/media/NoCrudeFood.png": "/React-Portfolio/static/media/NoCrudeFood.f474a0acc686bafb9a94.png",
     "static/media/CosmicDucks.png": "/React-Portfolio/static/media/CosmicDucks.3abb36ea4aadf10dbb99.png",
     "static/media/Aviva-Rubenstein-Resume.pdf": "/React-Portfolio/static/media/Aviva-Rubenstein-Resume.bc8d4a27b08e41695907.pdf",
     "static/media/WeatherApp.png": "/React-Portfolio/static/media/WeatherApp.628346be07e738954300.png",
     "static/media/TechBlog.png": "/React-Portfolio/static/media/TechBlog.c2bdf79bff7022afb09c.png",
+    "static/media/Avatar image.png": "/React-Portfolio/static/media/Avatar image.ca36761546e08f141886.png",
     "static/media/NoteTaker.png": "/React-Portfolio/static/media/NoteTaker.369294daa3254defe170.png",
     "static/media/Scheduler.png": "/React-Portfolio/static/media/Scheduler.e6cd69d16fbe24e5d38d.png",
     "index.html": "/React-Portfolio/index.html",
     "main.c2cab247.css.map": "/React-Portfolio/static/css/main.c2cab247.css.map",
-    "main.a2484f71.js.map": "/React-Portfolio/static/js/main.a2484f71.js.map"
+    "main.1da20e4d.js.map": "/React-Portfolio/static/js/main.1da20e4d.js.map"
   },
   "entrypoints": [
     "static/css/main.c2cab247.css",
-    "static/js/main.a2484f71.js"
+    "static/js/main.1da20e4d.js"
   ]
 }
