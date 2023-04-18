@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import {checkPassword, validateEmail} from '../../utils/helpers';
+import {validateEmail} from '../../utils/helpers';
 
 
 export default function Contact() {
@@ -22,6 +22,7 @@ if(inputType === 'name'){
   setName(inputValue);
 } else if(inputType ==='email'){
   setEmail(inputValue);
+  //using validateEmail functionality from utils to display error message when email formatting is not followed
   if(!validateEmail(email)){
     setErrorMessage('Please enter a valid email address')
   } else {

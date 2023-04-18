@@ -2,6 +2,7 @@ import React from 'react';
 import { colors } from '../../utils/helpers';
 import avatar from '../../Assets/Avatar image.png'
 
+//this will allow us to set the style of the JSX/HTML without a separate CSS file
 const styles = {
   image : {
     height: '30vh',
