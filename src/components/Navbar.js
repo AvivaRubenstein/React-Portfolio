@@ -20,10 +20,10 @@ function Navbar({ currentPage, handlePageChange }) {
   return (
 <nav className="navbar navbar-expand-lg" style={styles.headerStyle}>
   <div className="container-fluid">
-    <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    {/* <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span className="navbar-toggler-icon"></span>
-    </button>
-    <div className="collapse navbar-collapse" id="navbarSupportedContent">
+    </button> */}
+    {/* <div className="collapse navbar-collapse" id="navbarSupportedContent"> */}
     <div className="navbar-brand"  style={styles.navbarBrand}>Aviva Rubenstein</div>
     <ul ul className="navbar-nav me-auto mb-2 mb-lg-0">
       <li className="nav-item" style={styles.navItems}>
@@ -76,7 +76,7 @@ function Navbar({ currentPage, handlePageChange }) {
         </a>
       </li>
     </ul>
-    </div>
+    {/* </div> */}
     </div>
   </nav>  
 
