@@ -2,7 +2,7 @@
   "name": "aviva-rubenstein-portfolio",
   "version": "0.1.0",
   "private": false,
-  "homepage": "https://AvivaRubenstein/.github.io/React-Portfolio/",
+  "homepage": "https://AvivaRubenstein.github.io/React-Portfolio",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^11.1.0",
