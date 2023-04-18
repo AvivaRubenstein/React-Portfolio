@@ -12,6 +12,8 @@ To get the development environment running, you can clone this repository and ru
 ## Usage
 
 You can open the application by visiting https://avivarubenstein.github.io/React-Portfolio/ on your browser.
+<img width="1768" alt="Portfolio-site-screenshot" src="https://user-images.githubusercontent.com/113466697/232886190-1a80b00d-09a7-4eb0-a947-be049166e03a.png">
+
 
 ## Credits
 
