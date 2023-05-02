@@ -7,6 +7,7 @@ const notes = require('../../Assets/NoteTaker.png');
 const scheduler = require('../../Assets/Scheduler.png');
 const blog = require('../../Assets/TechBlog.png');
 const weather = require('../../Assets/WeatherApp.png');
+const openSource = require('../../Assets/Open-Source-Screenshot.png')
 
 const projects = 
 [
@@ -56,6 +57,14 @@ const projects =
   gitHub: "https://github.com/AvivaRubenstein/work-day-scheduler",
   link: "https://avivarubenstein.github.io/work-day-scheduler/",
   image: scheduler,
+  alt: "Application Screenshot"
+},
+{
+id: 6,
+  title: "Open Source Job Search App",
+  gitHub: "https://github.com/mshaari/open-source",
+  link: "https://open-source.herokuapp.com/",
+  image: openSource,
   alt: "Application Screenshot"
 },
 ]
