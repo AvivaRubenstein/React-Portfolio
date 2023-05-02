@@ -1,7 +1,8 @@
 {
   "files": {
     "main.css": "/React-Portfolio/static/css/main.c2cab247.css",
-    "main.js": "/React-Portfolio/static/js/main.1da20e4d.js",
+    "main.js": "/React-Portfolio/static/js/main.adad8943.js",
+    "static/media/Open-Source-Screenshot.png": "/React-Portfolio/static/media/Open-Source-Screenshot.17e36b46782123926f13.png",
     "static/media/NoCrudeFood.png": "/React-Portfolio/static/media/NoCrudeFood.f474a0acc686bafb9a94.png",
     "static/media/CosmicDucks.png": "/React-Portfolio/static/media/CosmicDucks.3abb36ea4aadf10dbb99.png",
     "static/media/Aviva-Rubenstein-Resume.pdf": "/React-Portfolio/static/media/Aviva-Rubenstein-Resume.bc8d4a27b08e41695907.pdf",
@@ -12,10 +13,10 @@
     "static/media/Scheduler.png": "/React-Portfolio/static/media/Scheduler.e6cd69d16fbe24e5d38d.png",
     "index.html": "/React-Portfolio/index.html",
     "main.c2cab247.css.map": "/React-Portfolio/static/css/main.c2cab247.css.map",
-    "main.1da20e4d.js.map": "/React-Portfolio/static/js/main.1da20e4d.js.map"
+    "main.adad8943.js.map": "/React-Portfolio/static/js/main.adad8943.js.map"
   },
   "entrypoints": [
     "static/css/main.c2cab247.css",
-    "static/js/main.1da20e4d.js"
+    "static/js/main.adad8943.js"
   ]
 }
