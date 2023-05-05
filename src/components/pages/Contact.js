@@ -1,7 +1,26 @@
 import React, {useState} from 'react';
 import {validateEmail} from '../../utils/helpers';
+import {colors} from '../../utils/helpers'
 
-
+const styles = {
+  container: {
+    flex: true,
+    justifyContent: 'center',
+    alignItems: 'center',
+    width: '50%'
+  },
+  textareaStyle: {
+    resize: 'vertical',
+    borderRadius: '10px'
+  },
+  inputStyle: {
+    borderRadius: '10px',
+  },
+  formStyle: {
+    backgroundColor: colors['UranianBlue'],
+    borderRadius: '10px',
+  }
+}
 export default function Contact() {
   //setting state variables for the contact form's fields
   //setting the default value for these vars to be empty, and setting up a function to change the state of each one
@@ -53,15 +72,22 @@ const handleFormSubmit = (e) =>{
 
 
   return (
-    <div>
+    <div className="container" >
       <h1>Contact Page</h1>
       <p>
         Please fill out the form to contact me:
       </p>
-      <form className='form'>
+      <div className="container" style={styles.formStyle}>
+      <div className="row" >
+      <form className='form' style={styles.container}>
+        <div className="col m-2 p-2">
         <label>
           Name:
+          <div>
+
+          </div>
         <input
+            style={styles.inputStyle}
             value={name}
             name="name"
             type="text"
@@ -72,9 +98,15 @@ const handleFormSubmit = (e) =>{
             required
           />
         </label>
+        </div>
+        <div className="col m-2 p-2">
          <label>
           Email:
+          <div>
+
+          </div>
          <input
+            style={styles.inputStyle}
             value={email}
             name="email"
             type="email"
@@ -85,9 +117,16 @@ const handleFormSubmit = (e) =>{
             required
           />
          </label>
+         </div>
+         <div className="col m-2 p-2">
           <label>
             Message:
-          <textarea
+            <div>
+
+            </div>
+          <textarea 
+            style={styles.textareaStyle}
+            id="message"
             value={message}
             name="message"
             type="textarea"
@@ -98,8 +137,13 @@ const handleFormSubmit = (e) =>{
             required
           />
           </label>
+          </div>
+          <div className="col m-2 p-2">
           <button type="button" onClick={handleFormSubmit}>Submit</button>
+          </div>
       </form>
+      </div>
+      </div>
       {errorMessage && (
         <div>
           <p className="error-text text-danger">{errorMessage}</p>

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
 import Resume from './pages/Resume';
 import AboutMe from './pages/AboutMe';
@@ -10,10 +10,10 @@ import Footer from './Footer'
 export default function PortfolioContainer() {
   return (
 <Router>
-<div className="flex-column justify-flex-start min-100-vh">
+<div className="d-flex flex-column min-vh-100">
   <Header/>
-  <div className="container">
-    <Routes>
+  <div className="container container-fluid" >
+    <Routes >
       <Route
       path="/"
       element={<AboutMe />}
