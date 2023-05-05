@@ -3,11 +3,25 @@ import {colors }from '../utils/helpers'
 const styles = {
   cardStyles : {
     background: colors.Vanilla,
-    border: `1px solid ${colors["Atomic-tangerine"]}`,
+    border: `2px solid ${colors["Atomic-tangerine"]}`,
     paddingTop: '50px',
     paddingBottom: '50px',
     paddingRight: '30px',
-    paddingLeft: '30px'
+    paddingLeft: '30px',
+    borderRadius: '15px',
+    display: 'flex',
+    justifyContent: 'center',
+    flexWrap: 'wrap',
+  },
+  buttons : {
+    backgroundColor: colors["Uranian-Blue"],
+    border:`1px solid ${colors.Moonstone}`,
+    borderRadius: '15px',
+    height: 'min-content',
+  },
+  imageContainer : {
+    height: 'max-content',
+    backgroundColor: colors.Moonstone
   }
 }
 
@@ -15,11 +29,13 @@ function Project(props){
   return (
     <div className="col-md-6 col-lg-4 col-xl-4" key={props.item.id} style={styles.cardStyles}>
           <h4>{props.item.title}</h4>
-          <img src={props.item.image} alt={props.item.alt} className="img-fluid img-thumbnail"></img>
+          <div className="container" style={styles.imageContainer}>
+          <img src={props.item.image} alt={props.item.alt} className="img-fluid img-thumbnail" ></img>
+          </div>
           <br></br>
-          <a href={props.item.gitHub}>Link to GitHub Repository</a>
+          <a className="btn" href={props.item.gitHub} style={styles.buttons}>Visit GitHub Repository</a>
           <br></br>
-          <a href={props.item.link}>Link to Deployed Application</a>
+          <a className="btn" href={props.item.link} style={styles.buttons}>Visit Deployed Application</a>
     </div>
   )
 }

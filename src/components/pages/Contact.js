@@ -7,7 +7,7 @@ const styles = {
     flex: true,
     justifyContent: 'center',
     alignItems: 'center',
-    width: '50%'
+    width: '50%',
   },
   textareaStyle: {
     resize: 'vertical',
@@ -17,8 +17,12 @@ const styles = {
     borderRadius: '10px',
   },
   formStyle: {
-    backgroundColor: colors['UranianBlue'],
+    backgroundColor: colors['Uranian-Blue'],
     borderRadius: '10px',
+  },
+  button : {
+    borderRadius: '20px',
+    backgroundColor: colors['Atomic-tangerine']
   }
 }
 export default function Contact() {
@@ -72,7 +76,7 @@ const handleFormSubmit = (e) =>{
 
 
   return (
-    <div className="container" >
+    <div className="container" style={styles.container}>
       <h1>Contact Page</h1>
       <p>
         Please fill out the form to contact me:
@@ -139,7 +143,7 @@ const handleFormSubmit = (e) =>{
           </label>
           </div>
           <div className="col m-2 p-2">
-          <button type="button" onClick={handleFormSubmit}>Submit</button>
+          <button type="button" style={styles.button} onClick={handleFormSubmit}>Submit</button>
           </div>
       </form>
       </div>

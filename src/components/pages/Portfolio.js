@@ -11,8 +11,16 @@ const openSource = require('../../Assets/Open-Source-Screenshot.png')
 
 const projects = 
 [
+  {
+    id: 1,
+      title: "Open Source Job Search App",
+      gitHub: "https://github.com/mshaari/open-source",
+      link: "https://open-source.herokuapp.com/",
+      image: openSource,
+      alt: "Application Screenshot"
+    },
 {
-  id: 1,
+  id: 2,
   title: "No Crude Food",
   gitHub: "https://github.com/AlexWiederman/No_Crude_Food",
   link: "https://young-mountain-95021.herokuapp.com/",
@@ -20,7 +28,7 @@ const projects =
   alt: "Application Screenshot"
 },
 {
-  id: 2,
+  id: 3,
   title: "Tech Blog",
   gitHub: "https://github.com/AvivaRubenstein/MVC-Tech-Blog",
   link: "https://radiant-everglades-93421.herokuapp.com/ ",
@@ -28,7 +36,7 @@ const projects =
   alt: "Application Screenshot"
 },
 {
-  id: 3,
+  id: 4,
   title: "Educational Search Site",
   gitHub: "https://github.com/crystal-coding-time/supreme-octo-system",
   link: "https://crystal-coding-time.github.io/supreme-octo-system/",
@@ -36,7 +44,7 @@ const projects =
   alt: "Application Screenshot"
 },
 {
-  id: 4,
+  id: 5,
   title: "Weather Dashboard",
   gitHub: "https://github.com/AvivaRubenstein/weather-dashboard",
   link: "https://avivarubenstein.github.io/weather-dashboard/",
@@ -44,7 +52,7 @@ const projects =
   alt: "Application Screenshot"
 },
 {
-  id: 5,
+  id: 6,
   title: "Text Editor Progressive Web Application",
   gitHub: "https://github.com/AvivaRubenstein/Text-Editor-PWA",
   link: " https://nameless-wildwood-53462.herokuapp.com/ ",
@@ -52,21 +60,14 @@ const projects =
   alt: "Application Screenshot"
 },
 {
-  id: 6,
+  id: 7,
   title: "Work Day Scheduler",
   gitHub: "https://github.com/AvivaRubenstein/work-day-scheduler",
   link: "https://avivarubenstein.github.io/work-day-scheduler/",
   image: scheduler,
   alt: "Application Screenshot"
 },
-{
-id: 6,
-  title: "Open Source Job Search App",
-  gitHub: "https://github.com/mshaari/open-source",
-  link: "https://open-source.herokuapp.com/",
-  image: openSource,
-  alt: "Application Screenshot"
-},
+
 ]
 
 
