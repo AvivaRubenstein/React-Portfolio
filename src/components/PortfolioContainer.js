@@ -19,7 +19,7 @@ const styles = {
 
 export default function PortfolioContainer() {
   return (
-<Router>
+<Router basename="/React-Portfolio">
 <div className="d-flex flex-column min-vh-100">
   <Header/>
   <div className="container container-fluid flex-grow-1" style={styles.page} >
