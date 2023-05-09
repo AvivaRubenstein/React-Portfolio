@@ -86,11 +86,6 @@ if(inputType === 'name'){
       setErrorMessage('');
     }
 
-const handleFormSubmit = (e) =>{
-  //prevents default behavior of submit button which would refresh page
-  e.preventDefault();
-}
-
 
   return (
     <div className="container" style={styles.container}>
