@@ -10,7 +10,7 @@ const styles = {
   },
   heading : {
     color: colors['Atomic-tangerine']
-  }
+  },
   
 }
 export default function AboutMe() {

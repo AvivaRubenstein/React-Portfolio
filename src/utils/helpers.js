@@ -4,7 +4,14 @@ export function validateEmail(email) {
   }
 
   export const colors = {"Moonstone":"#0fa3b1",
+  "Darker-Moonstone" : "#30B0C0",
   "Uranian-Blue":"#b5e2fa",
   "Baby-powder":"#f9f7f3",
   "Vanilla":"#eddea4",
-  "Atomic-tangerine":"#f7a072"};
+  "Atomic-tangerine":"#f7a072",
+  "Peach" : "#F9B38E",
+  "Apricot": "#FAC2A5",
+  "Rust": "#AE430A",
+  "Carribean-Current": "#1D6872"
+
+};

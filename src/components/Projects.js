@@ -18,10 +18,11 @@ const styles = {
     border:`1px solid ${colors.Moonstone}`,
     borderRadius: '15px',
     height: 'min-content',
+    margin: '5px',
   },
-  imageContainer : {
-    height: 'max-content',
-    backgroundColor: colors.Moonstone
+  buttonCard: {
+    // spaces the buttons apart evenly
+    alignItems: 'space-between'
   }
 }
 
@@ -29,13 +30,13 @@ function Project(props){
   return (
     <div className="col-md-6 col-lg-4 col-xl-4" key={props.item.id} style={styles.cardStyles}>
           <h4>{props.item.title}</h4>
-          <div className="container" style={styles.imageContainer}>
           <img src={props.item.image} alt={props.item.alt} className="img-fluid img-thumbnail" ></img>
-          </div>
           <br></br>
+          <div style={styles.buttonCard}>
           <a className="btn" href={props.item.gitHub} style={styles.buttons}>Visit GitHub Repository</a>
           <br></br>
           <a className="btn" href={props.item.link} style={styles.buttons}>Visit Deployed Application</a>
+          </div>
     </div>
   )
 }

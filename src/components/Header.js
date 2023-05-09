@@ -9,7 +9,9 @@ const styles = {
     fontSize: '25px',
   },
   navbarBrand : {
+    paddingLeft: '5px',
     fontSize: '30px',
+    color: colors['Carribean-Current']
     
   },
   navItems : {
@@ -17,7 +19,14 @@ const styles = {
     marginLeft: '40px',
     marginRight: '9px',
     textDecoration: 'none',
-    color: colors.Vanilla
+    color: colors.Vanilla,
+    border:`1px solid ${colors['Uranian-Blue']}`,
+    borderRadius: '30px',
+    fontSize: '28px',
+    paddingLeft: '9px',
+    paddingRight: '9px',
+    background: colors['Carribean-Current']
+    
   }
 }
 
@@ -26,24 +35,16 @@ export default function Header() {
     <header className="navbar navbar-expand-lg" style={styles.headerStyle}>
 <div className="navbar-brand"  style={styles.navbarBrand}>Aviva Rubenstein</div>
 <Link style={styles.navItems} to='/'>
-  <h1>
     About Me
-  </h1>
 </Link>
 <Link style={styles.navItems} to='/portfolio'>
-  <h1>
     Portfolio
-  </h1>
 </Link>
 <Link style={styles.navItems} to='/resume'>
-  <h1>
     Resume
-  </h1>
 </Link>
 <Link style={styles.navItems} to='/contact'>
-  <h1>
     Contact
-  </h1>
 </Link>
 
     </header>

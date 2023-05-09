@@ -5,14 +5,22 @@ import AboutMe from './pages/AboutMe';
 import Portfolio from './pages/Portfolio';
 import Contact from './pages/Contact';
 import Header from './Header';
-import Footer from './Footer'
+import Footer from './Footer';
+import {colors} from '../utils/helpers'
+const styles = {
+  page: {
+    backgroundColor: colors.Peach,
+    maxWidth: 'fill',
+    maxHeight: 'fill'
+  }
+}
 
 export default function PortfolioContainer() {
   return (
 <Router>
 <div className="d-flex flex-column min-vh-100">
   <Header/>
-  <div className="container container-fluid" >
+  <div className="container container-fluid" style={styles.page} >
     <Routes >
       <Route
       path="/"
@@ -30,7 +38,6 @@ export default function PortfolioContainer() {
       path="/contact"
       element={<Contact />}
       />
-        
     </Routes>
   </div>
   <Footer />
