@@ -1,5 +1,6 @@
 import React from 'react';
 import Projects from '../Projects';
+import {colors} from '../../utils/helpers'
 
 const cosmic = require('../../Assets/CosmicDucks.png');
 const crude = require('../../Assets/NoCrudeFood.png');
@@ -68,13 +69,18 @@ const projects =
   alt: "Application Screenshot"
 },
 
-]
+];
+const styles = {
+  heading: {
+    color: colors.Rust
+  }
+}
 
 
 export default function Portfolio() {
   return (
     <div>
-      <h1 className='text-center'>Portfolio</h1>
+      <h1 className='text-center' style={styles.heading}>Portfolio</h1>
         {/* map through projects here, and pass in */}
         <Projects projects={projects}/>
     </div>

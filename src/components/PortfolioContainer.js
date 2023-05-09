@@ -10,8 +10,10 @@ import {colors} from '../utils/helpers'
 const styles = {
   page: {
     backgroundColor: colors.Peach,
-    maxWidth: 'fill',
-    maxHeight: 'fill'
+    maxWidth: '100vw', // set max width to 100vw
+    minHeight: '100vh', // set min height to 100vh
+    marginLeft: 'calc(-50vw + 50%)', // center the container horizontally
+    marginRight: 'calc(-50vw + 50%)',
   }
 }
 
@@ -20,7 +22,7 @@ export default function PortfolioContainer() {
 <Router>
 <div className="d-flex flex-column min-vh-100">
   <Header/>
-  <div className="container container-fluid" style={styles.page} >
+  <div className="container container-fluid flex-grow-1" style={styles.page} >
     <Routes >
       <Route
       path="/"

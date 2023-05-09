@@ -9,7 +9,7 @@ const styles = {
     width: '30vh'
   },
   heading : {
-    color: colors['Atomic-tangerine']
+    color: colors.Rust
   },
   
 }

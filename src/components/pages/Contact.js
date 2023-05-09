@@ -1,6 +1,7 @@
-import React, {useState} from 'react';
+import React, {useState, useRef} from 'react';
 import {validateEmail} from '../../utils/helpers';
-import {colors} from '../../utils/helpers'
+import {colors} from '../../utils/helpers';
+import emailjs from '@emailjs/browser';;
 
 const styles = {
   container: {
@@ -25,7 +26,23 @@ const styles = {
     backgroundColor: colors['Atomic-tangerine']
   }
 }
+
 export default function Contact() {
+
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm('service_98fqqkr', 'template_03lv8oq', form.current, '-ltaEEJ40lRC8n0Od')
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
+  };
+
+
   //setting state variables for the contact form's fields
   //setting the default value for these vars to be empty, and setting up a function to change the state of each one
   const [name, setName] = useState('');
@@ -83,7 +100,7 @@ const handleFormSubmit = (e) =>{
       </p>
       <div className="container" style={styles.formStyle}>
       <div className="row" >
-      <form className='form' style={styles.container}>
+      <form className='form' style={styles.container} ref={form} onSubmit={sendEmail}>
         <div className="col m-2 p-2">
         <label>
           Name:
@@ -143,7 +160,7 @@ const handleFormSubmit = (e) =>{
           </label>
           </div>
           <div className="col m-2 p-2">
-          <button type="button" style={styles.button} onClick={handleFormSubmit}>Submit</button>
+          <button type="button" style={styles.button} onClick={sendEmail}>Submit</button>
           </div>
       </form>
       </div>

@@ -1,10 +1,17 @@
 import React from 'react';
+import {colors} from '../../utils/helpers'
+
+const styles = {
+  heading: {
+    color: colors.Rust
+  }
+}
 
 const resume = require('../../Assets/Aviva-Rubenstein-Resume.pdf')
 export default function Resume() {
   return (
     <div>
-      <h1>Resume</h1>
+      <h1 style={styles.heading}>Resume</h1>
       
       <h3>Technical Skills</h3>
       <ul>
