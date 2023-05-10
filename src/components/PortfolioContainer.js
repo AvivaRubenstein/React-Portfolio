@@ -25,7 +25,7 @@ export default function PortfolioContainer() {
   <div className="container container-fluid flex-grow-1" style={styles.page} >
     <Routes >
       <Route
-      path="/"
+      exact path="/"
       element={<AboutMe />}
       />
       <Route
