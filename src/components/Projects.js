@@ -1,5 +1,6 @@
 import React from "react";
-import {colors }from '../utils/helpers'
+import {colors }from '../utils/helpers';
+import '../Assets/styles/portfolio.css'
 const styles = {
   cardStyles : {
     background: colors.Vanilla,
@@ -14,7 +15,7 @@ const styles = {
     flexWrap: 'wrap',
   },
   buttons : {
-    backgroundColor: colors["Uranian-Blue"],
+    // backgroundColor: colors["Uranian-Blue"],
     border:`1px solid ${colors.Moonstone}`,
     borderRadius: '15px',
     height: 'min-content',
@@ -28,7 +29,7 @@ const styles = {
 
 function Project(props){
   return (
-    <div className="col-md-6 col-lg-4 col-xl-4" key={props.item.id} style={styles.cardStyles}>
+    <div className="col-md-6 col-lg-4 col-xl-4" id={'project-'+props.item.id} key={props.item.id} style={styles.cardStyles}>
           <h4>{props.item.title}</h4>
           <img src={props.item.image} alt={props.item.alt} className="img-fluid img-thumbnail" ></img>
           <br></br>

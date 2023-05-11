@@ -1,0 +1,24 @@
+:root{
+    --Moonstone:#0fa3b1;
+    --Darker-Moonstone: #30B0C0;
+    --Uranian-Blue: #b5e2fa;
+    --Baby-powder:#f9f7f3;
+    --Vanilla: #eddea4;
+    --Atomic-tangerine:#f7a072;
+    --Peach : #F9B38E;
+    --Apricot: #FAC2A5;
+    --Rust: #AE430A;
+    --Carribean-Current: #1D6872;
+      
+      }
+a.btn{
+    background-color: var(--Uranian-Blue);
+
+}
+a.btn:hover{
+  background-color: var(--Rust);
+}
+#project-1:hover::after{
+    content: "For this project, you will need to sign up for membership to access the site's full functionality. The stripe payment functionality is in test mode, so you can repeatedly enter '42' until the credit card number section is full. All of the other information can be fabricated and will not be saved by our site."
+    
+}
