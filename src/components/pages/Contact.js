@@ -24,6 +24,23 @@ const styles = {
   button : {
     borderRadius: '20px',
     backgroundColor: colors['Atomic-tangerine']
+  },
+  resetButton: {
+    borderRadius: '20px',
+    backgroundColor: colors['Carribean-Current'],
+    color: colors['Baby-powder'],
+    padding: '10px',
+  },
+  resetBackground: {
+    backgroundColor: colors['Uranian-Blue'],
+    borderRadius: '10px',
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    flexFlow: 'wrap'
+  },
+  br: {
+    width: '100%'
   }
 }
 
@@ -35,6 +52,7 @@ export default function Contact() {
   const [email, setEmail] = useState('');
   const[message, setMessage] = useState('');
   const [errorMessage, setErrorMessage] = useState('');
+  const [formSent, setSentStatus] = useState(false);
 
   //this function will handle anytime there is a change to the form
     const handleInputChange = (e) => {
@@ -83,11 +101,31 @@ if(inputType === 'name'){
           }, (error) => {
               console.log(error.text);
           });
+          setSentStatus(true);
       }
       else {
         setErrorMessage("Please fill out all of the fields before submitting!")
       }
     } 
+
+    const resetForm = (e) => {
+      e.preventDefault();
+      setSentStatus(false);
+    }
+
+    if(formSent === true){
+      return (
+        <div className="container" style={styles.container}>
+          <div className="container" style={styles.resetBackground}>
+          <h1>Thank you for contacting me!  I will get back to you via email as soon as possible.</h1>
+          <br style={styles.br}></br>
+          <h3>To submit another message, click the button below.</h3>
+          <br style={styles.br}></br>
+          <button type="button" id="reset-btn" style={styles.resetButton} onClick={resetForm}> Write another message</button>
+          </div>
+        </div>
+      )
+    }
 
 
   return (
