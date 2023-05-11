@@ -9,16 +9,25 @@
     --Apricot: #FAC2A5;
     --Rust: #AE430A;
     --Carribean-Current: #1D6872;
+    --Champagne: #F3E6D1;
       
       }
 a.btn{
     background-color: var(--Uranian-Blue);
+    color:  var(--Carribean-Current)
 
 }
 a.btn:hover{
   background-color: var(--Rust);
+  color: var(--Champagne);
 }
 #project-1:hover::after{
     content: "For this project, you will need to sign up for membership to access the site's full functionality. The stripe payment functionality is in test mode, so you can repeatedly enter '42' until the credit card number section is full. All of the other information can be fabricated and will not be saved by our site."
     
+}
+.project-card{
+    background-color: var(--Apricot);
+}
+.project-card:hover{
+    background-color: var(--Baby-powder);
 }

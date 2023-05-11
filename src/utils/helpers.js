@@ -12,6 +12,7 @@ export function validateEmail(email) {
   "Peach" : "#F9B38E",
   "Apricot": "#FAC2A5",
   "Rust": "#AE430A",
-  "Carribean-Current": "#1D6872"
+  "Carribean-Current": "#1D6872",
+  "Champage" : "#F3E6D1"
 
 };

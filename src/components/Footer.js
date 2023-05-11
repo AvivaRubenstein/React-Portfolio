@@ -14,7 +14,7 @@ const styles = {
     },
     links : {
         textDecoration: 'none',
-        color: colors.Vanilla
+        color: colors.Champage
     }
 }
 

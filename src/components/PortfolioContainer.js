@@ -9,7 +9,7 @@ import Footer from './Footer';
 import {colors} from '../utils/helpers'
 const styles = {
   page: {
-    backgroundColor: colors.Peach,
+    backgroundColor: colors.Champage,
     maxWidth: '100vw', // set max width to 100vw
     minHeight: '100vh', // set min height to 100vh
     marginLeft: 'calc(-50vw + 50%)', // center the container horizontally

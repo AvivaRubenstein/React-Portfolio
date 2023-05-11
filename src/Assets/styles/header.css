@@ -9,11 +9,12 @@
     --Apricot: #FAC2A5;
     --Rust: #AE430A;
     --Carribean-Current: #1D6872;
+    --Champagne : #F3E6D1;
       
       }
 a.navLink{
     background-color: var(--Carribean-Current);
-    color: var(--Vanilla);
+    color: var(--Champagne);
 }
 a.navLink:hover{
     background-color: var(--Peach);
