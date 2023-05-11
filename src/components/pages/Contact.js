@@ -107,12 +107,16 @@ if(inputType === 'name'){
         setErrorMessage("Please fill out all of the fields before submitting!")
       }
     } 
-
+//when form is sent, user is redirected to a landing page which allows them to reset the form and submit again
     const resetForm = (e) => {
       e.preventDefault();
       setSentStatus(false);
+      setName('');
+      setEmail('');
+      setMessage('');
+      setErrorMessage('');
     }
-
+//if the form is sent, redirect to this page
     if(formSent === true){
       return (
         <div className="container" style={styles.container}>
