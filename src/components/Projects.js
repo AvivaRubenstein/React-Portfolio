@@ -1,6 +1,7 @@
 import React from "react";
 import {colors }from '../utils/helpers';
-import '../Assets/styles/portfolio.css'
+//button colors are set up in separate css file to allow regular and :hover functionality 
+import '../Assets/styles/portfolio.css';
 const styles = {
   cardStyles : {
     background: colors.Vanilla,
