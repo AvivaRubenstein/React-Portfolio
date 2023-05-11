@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/React-Portfolio/static/css/main.ef65113a.css",
-    "main.js": "/React-Portfolio/static/js/main.b7693c44.js",
+    "main.css": "/React-Portfolio/static/css/main.ea43bfbe.css",
+    "main.js": "/React-Portfolio/static/js/main.42f32f2b.js",
     "static/media/Open-Source-Screenshot.png": "/React-Portfolio/static/media/Open-Source-Screenshot.17e36b46782123926f13.png",
     "static/media/NoCrudeFood.png": "/React-Portfolio/static/media/NoCrudeFood.f474a0acc686bafb9a94.png",
     "static/media/CosmicDucks.png": "/React-Portfolio/static/media/CosmicDucks.3abb36ea4aadf10dbb99.png",
@@ -12,11 +12,11 @@
     "static/media/NoteTaker.png": "/React-Portfolio/static/media/NoteTaker.369294daa3254defe170.png",
     "static/media/Scheduler.png": "/React-Portfolio/static/media/Scheduler.e6cd69d16fbe24e5d38d.png",
     "index.html": "/React-Portfolio/index.html",
-    "main.ef65113a.css.map": "/React-Portfolio/static/css/main.ef65113a.css.map",
-    "main.b7693c44.js.map": "/React-Portfolio/static/js/main.b7693c44.js.map"
+    "main.ea43bfbe.css.map": "/React-Portfolio/static/css/main.ea43bfbe.css.map",
+    "main.42f32f2b.js.map": "/React-Portfolio/static/js/main.42f32f2b.js.map"
   },
   "entrypoints": [
-    "static/css/main.ef65113a.css",
-    "static/js/main.b7693c44.js"
+    "static/css/main.ea43bfbe.css",
+    "static/js/main.42f32f2b.js"
   ]
 }
