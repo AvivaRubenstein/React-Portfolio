@@ -19,7 +19,7 @@ export default function AboutMe() {
       <h1 style={styles.heading}>About Me:</h1>
       <img src={avatar} alt="Avatar" style={styles.image}></img>
       <p>
-        My name is Aviva Rubenstein, and I am a Junior Software Developer......
+        My name is Aviva Rubenstein, and I am a Junior Software Developer.  Please check out my projects, and feel free to reach out through the contact page!
       </p>
     </div>
   );
