@@ -47,8 +47,8 @@ const projects =
 {
   id: 5,
   title: "Weather Dashboard",
-  gitHub: "https://github.com/AvivaRubenstein/weather-dashboard",
-  link: "https://avivarubenstein.github.io/weather-dashboard/",
+  gitHub: "https://github.com/AvivaRubenstein/react-weather-app",
+  link: "https://avivarubenstein.github.io/react-weather-app/",
   image: weather,
   alt: "Application Screenshot"
 },
