@@ -31,7 +31,7 @@ export default function Footer(){
         </a>
         </div>
         <div className='col-4'>
-        <a href="https://www.linkedin.com/in/aviva-rubenstein-62266a1a2/" style={styles.links}>
+        <a href="www.linkedin.com/in/aviva-rubenstein-lichter-62266a1a2" style={styles.links}>
         LinkedIn 
         </a>     
         </div>
