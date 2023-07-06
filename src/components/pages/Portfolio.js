@@ -52,16 +52,16 @@ const projects =
   image: weather,
   alt: "Application Screenshot"
 },
+// {
+//   id: 6,
+//   title: "Text Editor Progressive Web Application",
+//   gitHub: "https://github.com/AvivaRubenstein/Text-Editor-PWA",
+//   link: " https://nameless-wildwood-53462.herokuapp.com/ ",
+//   image: notes,
+//   alt: "Application Screenshot"
+// },
 {
   id: 6,
-  title: "Text Editor Progressive Web Application",
-  gitHub: "https://github.com/AvivaRubenstein/Text-Editor-PWA",
-  link: " https://nameless-wildwood-53462.herokuapp.com/ ",
-  image: notes,
-  alt: "Application Screenshot"
-},
-{
-  id: 7,
   title: "Work Day Scheduler",
   gitHub: "https://github.com/AvivaRubenstein/work-day-scheduler",
   link: "https://avivarubenstein.github.io/work-day-scheduler/",

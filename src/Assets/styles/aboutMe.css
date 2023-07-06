@@ -1,0 +1,20 @@
+i.icon {
+    font-size: 9ch;
+    padding: 3px;
+}
+/* .row{
+    width: 60%
+} */
+.icons-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 60%; 
+}
+#techSkillsHeading {
+    text-align: center;
+}
+.about-me-description {
+    text-align: center;
+}

@@ -11,7 +11,7 @@ const styles = {
   page: {
     backgroundColor: colors.Champage,
     maxWidth: '100vw', // set max width to 100vw
-    minHeight: '100vh', // set min height to 100vh
+    minHeight: '80vh', // set min height to 80vh to accomodate navbar + container space
     marginLeft: 'calc(-50vw + 50%)', // center the container horizontally
     marginRight: 'calc(-50vw + 50%)',
   }
