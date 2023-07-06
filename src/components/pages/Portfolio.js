@@ -4,7 +4,6 @@ import {colors} from '../../utils/helpers'
 
 const cosmic = require('../../Assets/CosmicDucks.png');
 const crude = require('../../Assets/NoCrudeFood.png');
-const notes = require('../../Assets/NoteTaker.png');
 const scheduler = require('../../Assets/Scheduler.png');
 const blog = require('../../Assets/TechBlog.png');
 const weather = require('../../Assets/WeatherApp.png');
@@ -52,14 +51,7 @@ const projects =
   image: weather,
   alt: "Application Screenshot"
 },
-// {
-//   id: 6,
-//   title: "Text Editor Progressive Web Application",
-//   gitHub: "https://github.com/AvivaRubenstein/Text-Editor-PWA",
-//   link: " https://nameless-wildwood-53462.herokuapp.com/ ",
-//   image: notes,
-//   alt: "Application Screenshot"
-// },
+
 {
   id: 6,
   title: "Work Day Scheduler",
