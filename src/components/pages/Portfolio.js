@@ -15,7 +15,7 @@ const projects =
     id: 1,
       title: "Open Source Job Search App",
       gitHub: "https://github.com/mshaari/open-source",
-      link: "https://open-source.herokuapp.com/",
+      link: "https://opensource-00652c620d31.herokuapp.com/",
       image: openSource,
       alt: "Application Screenshot"
     },
