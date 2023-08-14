@@ -6,7 +6,8 @@ import '../../Assets/styles/aboutMe.css';
 //this will allow us to set the style of the JSX/HTML without a separate CSS file
 const styles = {
   image : {
-    width: '30vh'
+    width: '30vh',
+    borderRadius: '150px'
   },
   heading : {
     color: colors.Rust
