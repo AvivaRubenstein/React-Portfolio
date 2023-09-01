@@ -7,9 +7,9 @@ const stackOverflowImg = require('../Assets/StackOverflow.png');
 const styles = {
     footerStyle : {
         background: colors.Moonstone,
-        fontSize: '25px',
-        paddingTop: '15px',
-        paddingBottom: '15px',
+        fontSize: '20px',
+        paddingTop: '8px',
+        paddingBottom: '8px',
         
     },
     links : {
