@@ -7,11 +7,11 @@ import '../Assets/styles/header.css';
 const styles = {
   headerStyle: {
     background: colors.Moonstone,
-    fontSize: '25px',
+    fontSize: '20px',
   },
   navbarBrand : {
     paddingLeft: '5px',
-    fontSize: '30px',
+    fontSize: '20px',
     color: colors['Carribean-Current']
     
   },
@@ -23,7 +23,7 @@ const styles = {
     // color: colors.Vanilla,
     border:`1px solid ${colors['Uranian-Blue']}`,
     borderRadius: '30px',
-    fontSize: '28px',
+    fontSize: '20px',
     paddingLeft: '9px',
     paddingRight: '9px',
     // background: colors['Carribean-Current']
