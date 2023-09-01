@@ -6,7 +6,7 @@ import '../../Assets/styles/aboutMe.css';
 //this will allow us to set the style of the JSX/HTML without a separate CSS file
 const styles = {
   image : {
-    width: '30vh',
+    width: '18vw',
     borderRadius: '150px'
   },
   heading : {
@@ -19,12 +19,16 @@ export default function AboutMe() {
     <div>
     <div className="container">
       <div className="row">
-        <div className="col about-me-description">
-      <h1 style={styles.heading}>About Me:</h1>
-      <img src={pic} alt="Photo" style={styles.image}></img>
-      <p>
-        My name is Aviva Rubenstein, and I am a Full-Stack Software Developer.  Please check out my projects, and feel free to reach out through the contact page, or by emailing me at aviva.d.rubenstein@gmail.com
+        <div className="col ">
+      <h1 className="about-me" style={styles.heading}>About Me:</h1>
+        </div>
+        <div className="row">
+      <p className='col-6 ' id='descr'>
+        Hi!  My name is Aviva Rubenstein, and I am a Full-Stack Software Developer with experience in HTML/CSS/JavaScript and Java, as well as React, MySQL, NoSQL, APIs, and the MERN stack.   I am passionate about learning new technologies and about building code that works seamlessly for the end-user.  I am a problem-solver by nature, and I have experience working closely with teammates and superiors on projects to deliver results.  Please check out my projects, and feel free to reach out through the contact page, or by emailing me at aviva.d.rubenstein@gmail.com
       </p>
+      <div className='col-6 about-me'>
+      <img src={pic} alt="Photo" style={styles.image}></img>
+          </div>
         </div>
       </div>
     </div>
@@ -36,6 +40,7 @@ export default function AboutMe() {
       <i className="devicon-html5-plain-wordmark icon"></i>
       <i className="devicon-css3-plain-wordmark icon"></i>
       <i className="devicon-javascript-plain icon"></i>
+      <i className="devicon-java-plain-wordmark icon"></i>
       <i className="devicon-nodejs-plain-wordmark icon"></i>
       <i className="devicon-npm-original-wordmark icon"></i>
       <i className="devicon-jquery-plain-wordmark icon"></i>
